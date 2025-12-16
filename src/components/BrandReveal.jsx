@@ -42,7 +42,9 @@ export default function BrandReveal() {
 
              {/* Contact Button */}
              <motion.a
-                href="mailto:partnerships@wtffoods.in" 
+                href="https://www.instagram.com/rollxbywtf/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer" 
                 className="px-8 py-4 bg-white text-[#D62828] border-2 border-[#D62828] text-lg md:text-xl font-bold rounded-full hover:bg-red-50 transition-colors duration-300 shadow-lg text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
