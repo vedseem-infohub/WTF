@@ -53,7 +53,7 @@ export default function HeroSection() {
                 />
                  {/* Mobile Image */}
                  <Image 
-                    src="/mobile-hero.png" 
+                    src="/hero1.png" 
                     alt="Hero Left Mobile" 
                     fill
                     priority
@@ -80,7 +80,7 @@ export default function HeroSection() {
                 />
                 {/* Mobile Image */}
                 <Image 
-                    src="/mobile-hero.png" 
+                    src="/hero1.png" 
                     alt="Hero Right Mobile" 
                     fill
                     priority
