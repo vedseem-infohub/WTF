@@ -4,12 +4,8 @@ import { motion } from 'framer-motion';
 
 export default function BrandReveal() {
   return (
-    <section className="min-h-screen bg-white flex flex-col items-center justify-center relative px-4 py-10 md:py-20 z-20">
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+    <div className="w-full h-full flex flex-col items-center justify-center relative px-4 py-10 md:py-20 z-0">
+      <div 
         className="text-center flex flex-col items-center gap-6 md:gap-8"
       >
         {/* Logo */}
@@ -17,7 +13,6 @@ export default function BrandReveal() {
              <Image src="/logo.png" alt="Brand Logo" fill className="object-contain" />
         </div>
 
-        {/* Headline */}
         {/* Headline */}
         <h1 
             className="text-4xl md:text-7xl lg:text-9xl uppercase tracking-tighter text-[#D62828] leading-none text-center"
@@ -52,7 +47,7 @@ export default function BrandReveal() {
                 Contact
             </motion.a>
         </div>
-      </motion.div>
-    </section>
+      </div>
+    </div>
   );
 }
