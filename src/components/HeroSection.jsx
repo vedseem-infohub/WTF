@@ -60,7 +60,7 @@ export default function HeroSection() {
                 />
                 {/* Mobile Image */}
                 <Image 
-                    src="/mobile-hero.jpg" 
+                    src="/mobile-hero.png" 
                     alt="Hero Right Mobile" 
                     fill
                     priority
