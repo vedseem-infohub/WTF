@@ -26,7 +26,7 @@ export default function BrandReveal() {
             
             {/* Headline Text */}
             <h2 className="text-2xl md:text-3xl font-bold text-[#D62828] tracking-wide uppercase">
-                Get Franchise
+                Get Partner With Us!
             </h2>
 
             {/* Buttons Row */}
