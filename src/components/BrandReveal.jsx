@@ -1,77 +1,98 @@
-'use client';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function BrandReveal() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center relative px-4 py-10 md:py-20 z-0">
-      <div 
-        className="text-center flex flex-col items-center gap-6 md:gap-8 -mt-15"
-      >
-        {/* Logo */}
-        <div className="w-24 h-24 md:w-48 md:h-48 relative mb-2 md:mb-4">
-             <Image src="/logo.png" alt="Brand Logo" fill className="object-contain" />
+      <div className="text-center flex flex-col items-center gap-4 md:gap-6 -mt-15">
+        {/* Logos */}
+        <div className="flex flex-row gap-8 items-center">
+          {/* WTF Logo */}
+          <div className="w-24 h-24 md:w-48 md:h-48 relative">
+            <Image
+              src="/logo.png"
+              alt="WTF Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+          {/* Divider (Optional, or just gap) */}
+
+          {/* ROLL-X Logo (Placeholder using logo.png or similar) */}
+          <div className="w-24 h-24 md:w-48 md:h-48 relative">
+            <Image
+              src="/roll-x.png"
+              alt="Roll-X Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
 
         {/* Headline */}
-        <h1 
-            className="text-4xl md:text-7xl lg:text-9xl uppercase tracking-tighter text-[#D62828] leading-none text-center"
-            style={{ fontFamily: 'var(--font-montserrat), sans-serif', fontWeight: 800 }}
+        <h1
+          className="text-4xl md:text-7xl lg:text-9xl uppercase tracking-tighter text-[#D62828] leading-none text-center"
+          style={{
+            fontFamily: "var(--font-montserrat), sans-serif",
+            fontWeight: 700,
+          }}
         >
-          WHERE’S<br />THE FORK
+          WHERE’S
+          <br />
+          THE FORK
         </h1>
 
         {/* Content Section */}
         <div className="flex flex-col items-center gap-4 mt-6 md:mt-8 w-full">
-            
-            {/* Headline Text */}
-            <h2 className="text-2xl md:text-3xl font-bold text-[#D62828] tracking-wide uppercase">
-                Get Partner With Us!
-            </h2>
+          {/* Headline Text */}
+          <h2 className="text-2xl md:text-3xl font-bold text-[#D62828] tracking-wide uppercase">
+            Partner With Us!
+          </h2>
 
-            {/* Buttons Row */}
-            <div className="flex flex-row gap-4 md:gap-6 w-full justify-center">
-                 {/* WTF Button */}
-                 <motion.a
-                    href="https://partnerships.wtffoods.in/forms/wtf"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="px-8 py-3 md:py-4 bg-[#D62828] text-white text-lg md:text-xl font-bold rounded-full hover:bg-red-700 transition-colors duration-300 shadow-lg text-center min-w-[120px] md:min-w-[150px]"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    WTF
-                </motion.a>
-
-                {/* ROLL-X Button */}
-                <motion.a
-                    href="https://partnerships.wtffoods.in/forms/roll-x"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-8 py-3 md:py-4 bg-[#D62828] text-white text-lg md:text-xl font-bold rounded-full hover:bg-red-700 transition-colors duration-300 shadow-lg text-center min-w-[120px] md:min-w-[150px]"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    ROLL-X
-                </motion.a>
-            </div>
-
-            {/* Contact Button */}
+          {/* Buttons Row */}
+          <div className="flex flex-row gap-6 md:gap-10 w-full justify-center flex-wrap">
+            {/* WTF Button */}
             <motion.a
-                href="https://www.instagram.com/sahil.sethi01/"
-                target="_blank"
-                rel="noopener noreferrer" 
-                className="px-6 py-2 md:py-3 bg-white text-[#D62828] border-2 border-[#D62828] text-base md:text-lg font-bold rounded-full hover:bg-red-50 transition-colors duration-300 shadow-lg text-center min-w-[100px] md:min-w-[130px]"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              href="https://partnerships.wtffoods.in/forms/wtf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-5 md:px-12 md:py-6 bg-[#D62828] text-white text-xl md:text-2xl font-bold rounded-full hover:bg-red-700 transition-colors duration-300 shadow-lg text-center min-w-[160px]md:min-w-[200px]"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-                Contact
+              WTF
             </motion.a>
 
-            {/* Under Construction Text */}
-            <p className="text-xs md:text-sm text-gray-500 font-medium tracking-wider mt-2 opacity-80">
-               We are under transformation
-            </p>
+            {/* ROLL-X Button */}
+            <motion.a
+              href="https://partnerships.wtffoods.in/forms/roll-x"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-5 md:px-12 md:py-6 bg-[#D62828] text-white text-xl md:text-2xl font-bold rounded-full hover:bg-red-700 transition-colors duration-300 shadow-lg text-center min-w-[160px]md:min-w-[200px]"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              ROLL-X
+            </motion.a>
+          </div>
+
+          {/* Contact Button */}
+          <motion.a
+            href="https://www.instagram.com/sahil.sethi01/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 md:py-3 bg-white text-[#D62828] border-2 border-[#D62828] text-base md:text-lg font-bold rounded-full hover:bg-red-50 transition-colors duration-300 shadow-lg text-center min-w-[100px]md:min-w-[130px]"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Contact Us!
+          </motion.a>
+
+          {/* Under Construction Text */}
+          <p className="text-xs md:text-sm text-gray-500 font-medium tracking-wider mt-2 opacity-80">
+            We are under transformation
+          </p>
         </div>
       </div>
     </div>
