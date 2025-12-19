@@ -31,22 +31,17 @@ export default function BrandReveal() {
         </div>
 
         {/* Headline */}
-        <h1
-          className="text-4xl md:text-7xl lg:text-9xl uppercase tracking-tighter text-[#D62828] leading-none text-center"
-          style={{
-            fontFamily: "var(--font-montserrat), sans-serif",
-            fontWeight: 700,
-          }}
-        >
-          WHERE’S
-          <br />
-          THE FORK
-        </h1>
 
         {/* Content Section */}
         <div className="flex flex-col items-center gap-4 mt-6 md:mt-8 w-full">
           {/* Headline Text */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[#D62828] tracking-wide uppercase">
+          <h2
+            className="text-4xl md:text-7xl lg:text-9xl uppercase tracking-tighter text-[#D62828] leading-none text-center"
+            style={{
+              fontFamily: "var(--font-montserrat), sans-serif",
+              fontWeight: 600,
+            }}
+          >
             Partner With Us!
           </h2>
 
