@@ -24,6 +24,7 @@ export default function HeroSection() {
   const revealScale = useTransform(smoothProgress, [0, 0.75], [0.8, 1]);
   const revealY = useTransform(smoothProgress, [0, 0.75], [100, 0]);
   const revealOpacity = useTransform(smoothProgress, [0, 0.3], [0, 1]);
+  const swipeDownOpacity = useTransform(smoothProgress, [0, 0.15], [1, 0]);
 
   return (
     <div
@@ -91,6 +92,23 @@ export default function HeroSection() {
               className="object-cover object-center block md:hidden"
             />
           </div>
+        </motion.div>
+
+        {/* Swipe Down Indicator */}
+        <motion.div
+          style={{ opacity: swipeDownOpacity }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+        >
+          <span className="text-white text-sm md:text-base font-medium tracking-wider drop-shadow-lg">
+            Swipe Down
+          </span>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="text-white text-2xl drop-shadow-lg"
+          >
+            ↓
+          </motion.div>
         </motion.div>
       </div>
     </div>
