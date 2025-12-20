@@ -97,7 +97,7 @@ export default function HeroSection() {
         {/* Swipe Down Indicator */}
         <motion.div
           style={{ opacity: swipeDownOpacity }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+          className="absolute bottom-16 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
         >
           <span className="text-white text-sm md:text-base font-medium tracking-wider drop-shadow-lg">
             Swipe Down
