@@ -5,89 +5,57 @@ import { motion } from "framer-motion";
 export default function BrandReveal() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center relative px-4 py-10 md:py-20 z-0">
-      <div className="text-center flex flex-col items-center gap-4 md:gap-6 -mt-15">
-        {/* Logos */}
-        <div className="flex flex-row gap-8 items-center">
-          {/* WTF Logo */}
-          <div className="w-24 h-24 md:w-48 md:h-48 relative">
-            <Image
-              src="/logo.png"
-              alt="WTF Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
-          {/* Divider (Optional, or just gap) */}
-
-          {/* ROLL-X Logo (Placeholder using logo.png or similar) */}
-          <div className="w-24 h-24 md:w-48 md:h-48 relative">
-            <Image
-              src="/roll-x.png"
-              alt="Roll-X Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
-        </div>
-
-        {/* Headline */}
-
-        {/* Content Section */}
+      <div className="text-center flex flex-col items-center gap-6 md:gap-8 -mt-15">
         <div className="flex flex-col items-center gap-4 mt-6 md:mt-8 w-full">
-          {/* Headline Text */}
           <h2
             className="text-4xl md:text-7xl lg:text-9xl uppercase tracking-tighter text-[#D62828] leading-none text-center"
             style={{
               fontFamily: "var(--font-montserrat), sans-serif",
-              fontWeight: 600,
+              fontWeight: 800,
             }}
           >
             Partner With Us!
           </h2>
 
-          {/* Buttons Row */}
-          <div className="flex flex-row gap-6 md:gap-10 w-full justify-center flex-wrap">
-            {/* WTF Button */}
+          <div className="flex flex-row gap-8 md:gap-16 w-full justify-center flex-wrap pt-4">
+            {/* WTF Logo Link */}
             <motion.a
               href="https://partnerships.wtffoods.in/forms/wtf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-5 md:px-12 md:py-6 bg-[#D62828] text-white text-xl md:text-2xl font-bold rounded-full hover:bg-red-700 transition-colors duration-300 shadow-lg text-center min-w-[160px]md:min-w-[200px]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="relative flex items-center justify-center p-4"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
-              WTF
+              <div className="relative w-32 h-32 md:w-56 md:h-56">
+                <Image
+                  src="/logo.png"
+                  alt="WTF Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </motion.a>
 
-            {/* ROLL-X Button */}
+            {/* ROLL-X Logo Link */}
             <motion.a
               href="https://partnerships.wtffoods.in/forms/roll-x"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-5 md:px-12 md:py-6 bg-[#D62828] text-white text-xl md:text-2xl font-bold rounded-full hover:bg-red-700 transition-colors duration-300 shadow-lg text-center min-w-[160px]md:min-w-[200px]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="relative flex items-center justify-center p-4"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
-              ROLL-X
+              <div className="relative w-32 h-32 md:w-56 md:h-56">
+                <Image
+                  src="/roll-x.png"
+                  alt="Roll-X Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </motion.a>
           </div>
-
-          {/* Contact Button */}
-          <motion.a
-            href="https://www.instagram.com/sahil.sethi01/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-2 md:py-3 bg-white text-[#D62828] border-2 border-[#D62828] text-base md:text-lg font-bold rounded-full hover:bg-red-50 transition-colors duration-300 shadow-lg text-center min-w-[100px]md:min-w-[130px]"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contact Us!
-          </motion.a>
-
-          {/* Under Construction Text */}
-          <p className="text-xs md:text-sm text-gray-500 font-medium tracking-wider mt-2 opacity-80">
-            We are under transformation
-          </p>
         </div>
       </div>
     </div>
